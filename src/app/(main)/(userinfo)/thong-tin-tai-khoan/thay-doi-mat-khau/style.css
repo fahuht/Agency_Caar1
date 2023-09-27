@@ -1,0 +1,32 @@
+
+.ant-input-affix-wrapper-focused,
+.ant-input-affix-wrapper:focus {
+    @apply border border-orange-550 !important;
+    box-shadow: none;
+}
+
+.form-control-password .ant-input {
+    @apply bg-primary-100;
+}
+
+.form-control-password .ant-input-suffix .ant-input-password-icon svg path {
+    @apply text-orange-450;
+}
+
+.input-custom {
+    @apply w-full p-3 rounded-md bg-primary-100;
+}
+
+.input-container {
+    @apply relative;
+}
+
+.icon-show-pass {
+    @apply absolute top-2/4 right-4 cursor-pointer;
+    transform: translateY(-50%);
+}
+
+.input-custom:focus-visible {
+    @apply w-full p-3 border border-orange-600 rounded-md;
+    outline: none;
+}

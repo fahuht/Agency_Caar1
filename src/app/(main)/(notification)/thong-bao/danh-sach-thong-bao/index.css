@@ -1,0 +1,95 @@
+.page-list-notification {
+  @apply pl-2 pr-2 md:pl-5 md:pr-5 lg:pl-10 lg:pr-10 xl:pl-32 xl:pr-32 pb-5 pt-5;
+}
+
+.page-list-notification .link-notification {
+  @apply flex justify-between p-3 bg-white mb-3 rounded-lg hover:text-orange-500;
+}
+
+.page-list-notification .icon-unseen-notification {
+  @apply text-sky-500 self-center ml-3 md:ml-8 mr-3;
+}
+
+.pagination-notification {
+  @apply text-center justify-center;
+}
+.pagination-notification .noti-no-data p {
+  @apply font-extrabold text-2xl tracking-tighter text-black leading-9;
+}
+.pagination-notification .noti-no-data span {
+  @apply font-medium text-base text-zinc-700 leading-6;
+}
+.pagination-notification .ant-pagination-mini {
+  @apply font-bold text-base;
+}
+
+.pagination-notification .ant-pagination-mini .ant-pagination-item {
+  @apply inline-flex justify-center items-center text-orange-500 min-w-[46px] h-12 mr-4 rounded-md overflow-hidden;
+}
+
+.pagination-notification .ant-pagination-mini .ant-pagination-item a {
+  @apply leading-[46px] 
+}
+.pagination-notification .ant-pagination-mini .ant-pagination-item:hover,
+.ant-pagination-item:focus {
+  @apply text-orange-500 bg-orange-500 rounded-md border-orange-500;
+}
+
+.pagination-notification .ant-pagination-mini .ant-pagination-item:hover,
+.ant-pagination-item:focus a {
+  @apply border-0 text-white;
+}
+
+.pagination-notification .ant-pagination-mini .ant-pagination-item-active {
+  @apply bg-orange-500 rounded-md border-orange-500 text-orange-500;
+}
+.pagination-notification .ant-pagination-mini .ant-pagination-item-active a {
+  @apply bg-orange-500 rounded-md border-orange-500 text-white;
+}
+
+.pagination-notification
+  .ant-pagination-mini
+  .ant-pagination-item-active
+  a:hover {
+  @apply text-white border-orange-500 rounded-md bg-orange-500;
+}
+
+.pagination-notification .ant-pagination-mini .ant-pagination-item-link-icon,
+.ant-pagination-item-ellipsis,
+.ant-pagination-prev a,
+.ant-pagination-next a {
+  @apply text-orange-500;
+}
+
+.pagination-notification .ant-pagination-mini .ant-pagination-disabled {
+  @apply opacity-50;
+}
+
+@media (max-width: 767.98px) {
+  .pagination-notification .ant-pagination-mini .ant-pagination-item {
+    @apply mr-1.5 min-w-[25px] h-6;
+  }
+  .pagination-notification .ant-pagination-prev,
+  .ant-pagination-next {
+    @apply mr-1.5;
+  }
+}
+
+.pagination-notification .ant-pagination-mini .ant-pagination-prev,
+.ant-pagination-next {
+  @apply mr-4;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .pagination-notification
+    .pagination
+    .ant-pagination-mini
+    .ant-pagination-item {
+    @apply mr-2 h-8 min-w-[32px];
+  }
+
+  .pagination-notification .pagination .ant-pagination-prev,
+  .ant-pagination-next {
+    @apply mr-2;
+  }
+}

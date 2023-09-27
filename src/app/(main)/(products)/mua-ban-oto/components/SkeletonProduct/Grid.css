@@ -1,0 +1,45 @@
+.car-list-grid {
+    @apply grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-4 md:grid-cols-2 md:gap-4 lg:grid-cols-3 lg:gap-4 xl:grid-cols-4 xl:gap-4
+}
+
+.car-image img{
+    @apply h-[260px] rounded-t-lg
+}
+
+.car-content{
+    @apply p-3 bg-white whitespace-nowrap overflow-hidden flex flex-col
+}
+.car-content:hover{
+    @apply bg-slate-50
+}
+
+.car-title{
+    @apply font-semibold text-base whitespace-nowrap overflow-hidden pl-1
+}
+
+.car-location{
+    @apply mt-2 whitespace-nowrap overflow-hidden text-[0.75rem] pl-1
+}
+
+.car-location i {
+    @apply text-lg
+}
+
+.car-hr{
+    @apply my-2 pl-1
+}
+.car-price{
+    @apply py-3 pl-2 text-xl font-semibold
+}
+
+.car-parameters {
+    @apply flex gap-3 text-gray-600 text-sm font-normal pl-2
+}
+
+.skeleton-container .car-image .ant-skeleton{
+    @apply w-full;
+}
+
+.skeleton-container .car-image .ant-skeleton .ant-skeleton-image{
+    @apply w-full h-64
+}

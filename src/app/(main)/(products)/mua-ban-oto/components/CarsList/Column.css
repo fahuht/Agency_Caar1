@@ -1,0 +1,17 @@
+.car-list-column{
+    @apply flex flex-col gap-4
+}
+
+.car-list-column .car-item {
+    @apply grid grid-cols-5 rounded-lg max-h-48
+}
+
+.car-list-column .car-item  .car-image{
+    @apply col-span-2 sm:col-span-2 md:col-span-1
+}
+.car-list-column .car-item  .car-image img{
+    @apply rounded-none
+}
+.car-list-column .car-item  .car-content{
+    @apply col-span-3 sm:col-span-3 md:col-span-4
+}

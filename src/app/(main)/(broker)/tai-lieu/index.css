@@ -1,0 +1,50 @@
+.document-records-realty .image-header {
+  @apply bg-[url('../../../../../public/advance-search-page-header.png')] h-[479px];
+}
+@media (max-width: 576px) {
+  .document-records-realty .image-header {
+    @apply h-[330px];
+  }
+}
+
+.document-records-realty .box-search-document {
+  @apply flex flex-row absolute bottom-[-2rem] w-full items-center justify-center;
+}
+
+.document-records-realty .list-folder-document {
+  @apply w-full mt-14 flex justify-center items-center;
+}
+
+.document-records-realty .box-search-document .text-title- {
+  @apply font-bold text-5xl md:text-6xl text-white;
+}
+.document-records-realty .box-search-document .input-search {
+  @apply w-full p-3 mr-3 border border-orange-600 rounded-md focus-visible:w-full  outline-none;
+}
+.document-records-realty .box-search-document .button-search {
+  @apply px-6 py-3.5 text-base font-medium  bg-orange-600 rounded-lg text-center;
+}
+.document-records-realty .box-search-document .list-file-document {
+  @apply flex flex-row items-center justify-between mb-3 text-base cursor-pointer;
+}
+.document-records-realty .icon-action-document {
+  @apply basis-2/12 text-orange-600 text-end  md:flex md:flex-row justify-end;
+}
+
+.document-records-realty .list-folder-document summary {
+  @apply bg-white p-5 cursor-pointer rounded-lg;
+}
+.document-records-realty .list-folder-document summary[open] {
+  @apply bg-white px-5 pt-5 pb-2 cursor-pointer rounded-lg;
+}
+
+.document-records-realty .list-folder-document details[open] {
+  @apply bg-white rounded-lg;
+}
+
+.document-records-realty .list-folder-document details[open] summary {
+  @apply bg-white;
+}
+.document-records-realty .list-folder-document .file-document {
+  @apply mb-3 px-8 flex
+}

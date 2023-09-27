@@ -1,0 +1,45 @@
+@tailwind base;
+
+a {
+  /* @apply text-blue-700; */
+}
+
+a:hover {
+  /* @apply border-b-2 ; */
+}
+
+@tailwind components;
+
+@tailwind utilities;
+
+.content p {
+  @apply my-6;
+}
+
+.content ul {
+  @apply my-6;
+}
+
+.body-content{
+  @apply min-h-[90vh] bg-primary-100 pb-12;
+}
+
+.common-select-box .common-select-content{
+    @apply flex flex-wrap gap-2
+}
+
+.common-select-content .common-select-item{
+    @apply border-primary-200 text-primary-200 bg-primary-100 border-[1px] rounded-md px-4 py-2 text-center
+}
+
+.common-select-content .common-select-item{
+    @apply hover:!text-white hover:bg-primary-200 hover:cursor-pointer
+}
+
+.common-select-content .common-select-item-active{
+    @apply !text-white !bg-primary-200
+}
+
+/* .ant-popover{
+  @apply z-auto
+} */

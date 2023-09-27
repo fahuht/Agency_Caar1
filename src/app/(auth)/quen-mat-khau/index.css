@@ -1,0 +1,86 @@
+.header-auth {
+  border-bottom: 1px solid grey;
+}
+
+.header-auth .header-left .icon-header {
+  border-right: 1px solid grey;
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.header-auth .header-left .icon-header a {
+  color: black;
+  font-weight: 600;
+}
+
+.header-auth .header-left .icon-header a:hover {
+  border-bottom: none;
+}
+
+.header-auth .header-right a {
+  color: black;
+  font-weight: 600;
+}
+
+.header-auth .header-right a {
+  border-bottom: none;
+}
+
+.forgot-password-container {
+  @apply flex justify-end mt-9 mx-4 md:ml-96 lg:mt-9 lg:mr-12 lg:ml-32;
+}
+
+.forgot-password {
+  @apply w-1/3 bg-white rounded-lg p-5;
+}
+
+.btn-submit {
+  @apply mt-3 py-3 px-4 bg-orange-600 text-white rounded-md w-full;
+}
+
+.input-custom {
+  @apply w-full p-3 rounded-md bg-primary-100;
+}
+
+.input-custom:focus-visible {
+  @apply w-full p-3 border border-orange-600 rounded-md;
+  outline: none;
+}
+
+.error-content .error-title {
+  @apply mb-2 text-5xl font-bold leading-none text-black sm:text-[5rem] md:text-[6rem];
+}
+
+.error-content .error-sub-title {
+  @apply mb-3 text-2xl font-semibold leading-tight text-black;
+}
+
+.error-content .error-link-btn {
+  @apply inline-block rounded-lg border border-white px-8 py-3 text-center text-base font-semibold text-black transition;
+}
+
+.second-countdown {
+  @apply text-orange-600 font-semibold;
+}
+
+@media (max-width: 1024px) {
+  .header-auth {
+    @apply p-2;
+  }
+
+  .header-auth .header-left .icon-header {
+    padding-right: 0.5rem;
+  }
+
+  .forgot-password-container {
+    @apply flex justify-end p-0;
+  }
+
+  .forgot-password {
+    @apply w-full bg-white rounded-lg p-5;
+  }
+}
+.custom-border-right {
+  border-right: 1px solid rgba(238, 238, 238, 0.16);
+}

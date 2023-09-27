@@ -1,0 +1,20 @@
+.input-custom {
+  @apply w-full p-3 border border-orange-600 rounded-md;
+}
+
+.input-custom::placeholder{
+  @apply text-gray-600
+}
+
+.input-custom:focus-visible {
+  @apply w-full p-3 border border-orange-600 rounded-md;
+  outline: none;
+}
+
+.text-title-register {
+  @apply text-center text-sm lg:text-3xl md:text-base text-orange-600 font-bold
+}
+
+.icon-check-in-collection{
+  @apply text-base text-center text-orange-600 w-1/5
+}

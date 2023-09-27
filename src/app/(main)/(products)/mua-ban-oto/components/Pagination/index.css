@@ -1,0 +1,7 @@
+.load-more-container{
+    @apply w-full flex justify-center mt-4
+}
+
+.load-more-button {
+    @apply bg-primary-200 text-white p-3 rounded-lg
+}

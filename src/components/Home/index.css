@@ -1,0 +1,54 @@
+.navbar-page .link-route-desktop {
+  @apply flex items-center text-base font-medium  hover:text-red-600;
+}
+.navbar-page .link-route-moblie {
+  @apply items-center text-lg font-medium  hover:text-red-600;
+}
+.navbar-page .group-buttons-login {
+  @apply md:flex md:flex-1 md:items-center md:justify-end md:space-x-6;
+}
+.navbar-page .link-register {
+  @apply hidden md:flex items-center text-base font-medium text-white bg-red-600 pt-3 pb-3 pl-5 pr-5 rounded-lg;
+}
+.navbar-page .display-name-header {
+  @apply cursor-pointer hidden md:block text-base font-medium text-orange-600;
+}
+.info-user .ant-popover-content .ant-popover-inner {
+  @apply p-5;
+}
+
+.info-user .ant-popover-arrow {
+  @apply hidden;
+}
+.footer-page {
+  @apply relative z-10 bg-red-600 p-8 md:p-10 lg:p-20  lg:pt-[60px] lg:pb-10 text-white;
+}
+.footer-page .link-footer {
+  @apply inline-block mb-1 text-base leading-loose;
+}
+.footer-page .icon-facebook {
+  @apply mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4;
+}
+.navbar-mobile .ant-drawer-body {
+  @apply p-0;
+}
+.notification-header .icon-unseen-notification{
+    @apply text-sky-500 self-center ml-8 mr-3;
+}
+.navbar-page .icon-notification-header {
+  @apply  text-2xl text-orange-600 relative cursor-pointer
+}
+.navbar-page .notification-tick-icon {
+    @apply  text-red-600 self-center text-xs absolute left-2.5
+}
+.navbar-mobile li{
+    @apply flex pl-8 pr-8 pt-3 pb-3 border-b-[1px]
+}
+
+.navbar-mobile .link-route-mobile{
+    @apply items-center text-lg font-medium hover:text-red-600
+}
+
+.info-user .link-login{
+    @apply text-base font-medium text-gray-700 hover:text-red-600 mt-2
+}

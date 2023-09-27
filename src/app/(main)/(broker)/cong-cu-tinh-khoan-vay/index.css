@@ -1,0 +1,311 @@
+.lendingRate {
+    /* font-family: $fontfamily-base;
+    font-weight: $fontweight-tag; */
+    @apply font-medium pt-3 px-2 lg:px-36 md:px-10
+}
+
+.lendingRate .title-page{
+    @apply text-4xl mt-2 md:mt-3 lg:mt-4 xl:mt-4 mb-4 font-bold text-center
+}
+
+.lendingRate .caculation-tool {
+    @apply flex flex-col gap-[3.75rem] mb-3 col-span-12 md:col-span-12 lg:col-span-7 lg:pr-5
+}
+
+.lendingRate .caculation-tool .slider-lending-rate p {
+    font-weight: 900;
+}
+
+.lendingRate .caculation-tool .slider-lending-rate p span {
+    box-sizing: border-box;
+    padding: 3px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    @apply bg-orange-600 text-white
+    
+}
+
+.lendingRate .caculation-tool .slider-lending-rate .input-value {
+    width: 40%;
+    border: none;
+    border-bottom: 2px dashed;
+    text-align: center;
+    line-height: 1.5;
+    margin-left: 15px;
+    @apply  border-gray-600 text-gray-500 bg-white
+}
+
+.lendingRate .caculation-tool .slider-lending-rate .input-value .ant-input-number-input-wrap input {
+    text-align: center;
+}
+
+.lendingRate .caculation-tool .slider-lending-rate .input-value:focus {
+    outline: none;
+}
+
+.lendingRate .caculation-tool .slider-lending-rate .form-radio-loan {
+    margin-left: 7px;
+    line-height: 30px;
+    @apply flex flex-col sm:flex-row md:justify-center
+}
+
+.lendingRate .caculation-tool .slider-lending-rate .form-radio-loan .radio-label {
+    line-height: 35px;
+}
+
+.lendingRate .caculation-tool .slider-lending-rate .form-radio-loan .radio-label input[type='radio'] {
+    transform: scale(2);
+    margin-right: 20px;
+    @apply accent-orange-600
+}
+
+.lendingRate .caculation-tool .slider-lending-rate .ant-slider {
+    margin: 0 70px;
+}
+
+.lendingRate .caculation-tool .slider-lending-rate .ant-slider .ant-slider-handle {
+    margin-top: -7px;
+}
+
+.lendingRate .caculation-tool .slider-lending-rate .ant-slider .ant-slider-step .ant-slider-dot {
+    width: 13px;
+    height: 13px;
+}
+
+.lendingRate .caculation-tool .slider-lending-rate .ant-slider .ant-slider-mark {
+    margin-top: 10px;
+}
+
+.lendingRate .caculation-tool .slider-lending-rate .ant-slider .ant-slider-mark .ant-slider-mark-text {
+    white-space: nowrap;
+}
+
+.lendingRate .caculation-tool .slider-lending-rate .amount-loan .ant-slider .ant-slider-mark .ant-slider-mark-text-active:nth-child(1) {
+    margin-left: 15px;
+}
+
+.lendingRate .caculation-tool .slider-lending-rate .amount-loan .ant-slider-mark-text:nth-child(2) {
+    padding-right: 15px;
+}
+
+.lendingRate .caculation-tool .slider-lending-rate .amount-month .ant-slider-mark-text:nth-child(2) {
+    padding-right: 50px;
+}
+
+.lendingRate .show-lending-rate {
+    @apply col-span-12 md:col-span-12 lg:col-span-5 lg:pl-5 lg:flex lg:items-center
+}
+.lendingRate .show-lending-rate .title-lending-rate {
+    @apply text-gray-500
+}
+
+.lendingRate .show-lending-rate .value-lending-rate {
+    @apply text-orange-600
+}
+
+.lendingRate .view-table .result-title{
+    @apply text-4xl mt-2 md:mt-3 lg:mt-4 xl:mt-4 mb-4 font-bold text-center
+}
+
+.lendingRate .view-table .style-view {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.lendingRate .view-table .style-view .type-view-table {
+    padding: 1.5rem;
+    font-weight: 700;
+}
+
+.lendingRate .view-table .style-view .type-view-table td {
+    @apply border-gray-400
+}
+
+@media (max-width: 576px) {
+    .lendingRate .view-table .style-view .type-view-table {
+        padding-top: unset !important;
+    }
+}
+
+.lendingRate .view-table .style-view .type-view-table .table {
+    width: 100%;
+    table-layout: fixed;
+    transition: all 0.1s;
+    @apply text-black
+}
+
+.lendingRate .view-table .style-view .type-view-table .table thead {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.lendingRate .view-table .style-view .type-view-table .table tbody tr .table-content {
+    text-align: center;
+}
+
+.lendingRate .view-table .style-view .type-view-table .table tbody tr .row-left {
+    text-align: left;
+}
+
+.lendingRate .view-table .style-view .type-view-table .table tbody tr .loan-term-title {
+    font-weight: bold;
+    @apply text-orange-600 p-3
+}
+
+.lendingRate .view-table .style-view .type-view-table .table tbody tr .image-property .img img {
+    width: 67px;
+    height: 44px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.lendingRate .view-table .style-view .type-view-table .table tbody tr td .table-label {
+    display: none;
+}
+
+.lendingRate .view-table .style-view .type-view-table .table tbody.scrollable-tbody {
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+@media (max-width: 999.98px) {
+    .lendingRate .view-table .style-view .type-view-table .table {
+        display: block;
+    }
+
+    .lendingRate .view-table .style-view .type-view-table .table thead {
+        display: none;
+    }
+
+    .lendingRate .view-table .style-view .type-view-table .table tbody {
+        display: block;
+    }
+
+    .lendingRate .view-table .style-view .type-view-table .table tbody tr {
+        display: block;
+        border-bottom: 1px solid;
+        @apply border-gray-500
+    }
+
+    .lendingRate .view-table .style-view .type-view-table .table tbody tr .table-content {
+        text-align: center;
+    }
+
+    .lendingRate .view-table .style-view .type-view-table .table tbody tr td {
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 0;
+        border-top: 0;
+        padding-left: unset;
+        padding-right: unset;
+    }
+
+    .lendingRate .view-table .style-view .type-view-table .table tbody tr td .table-label {
+        width: 40%;
+        text-align: left;
+        display: block;
+    }
+
+    .lendingRate .view-table .style-view .type-view-table .table tbody tr td .table-content {
+        width: 60%;
+        text-align: right;
+    }
+
+    .lendingRate .view-table .style-view .type-view-table .table tbody tr td .table-content .img {
+        justify-content: start;
+    }
+}
+
+.lendingRate .view-table .style-view .pagination {
+    text-align: center;
+}
+
+.lendingRate .view-table .style-view .pagination .ant-pagination-mini .ant-pagination-item {
+    transition-delay: 2ms;
+    min-width: 46px;
+    height: 46px;
+    margin-right: 18px;
+    border-radius: 6px;
+    overflow: hidden;
+    @apply text-orange-600
+}
+
+.lendingRate .view-table .style-view .pagination .ant-pagination-mini .ant-pagination-item a {
+    line-height: 42px !important;
+}
+
+.lendingRate .view-table .style-view .pagination .ant-pagination-item:hover,
+.lendingRate .view-table .style-view .pagination .ant-pagination-item:focus {
+    /* color: $button-background-color-orange; */
+    /* background-color: $button-background-color-orange; */
+    border-radius: 6px;
+    /* border-color: $button-background-color-orange; */
+    /* color: $background-color-white; */
+    @apply text-orange-600 border-orange-600 bg-orange-500
+}
+
+.lendingRate .view-table .style-view .pagination .ant-pagination-item:hover a,
+.lendingRate .view-table .style-view .pagination .ant-pagination-item:focus a {
+    /* color: $background-color-white; */
+    @apply text-white
+}
+
+.lendingRate .view-table .style-view .pagination .ant-pagination-item-active {
+    /* background-color: $button-background-color-orange;
+    border-color: $button-background-color-orange;
+    color: $background-color-white; */
+    border-radius: 6px;
+    @apply bg-orange-600 border-orange-600 text-white
+}
+
+.lendingRate .view-table .style-view .pagination .ant-pagination-item-active a {
+    /* border-color: $button-background-color-orange;
+    background-color: $button-background-color-orange;
+    color: $background-color-white; */
+    @apply border-orange-600 bg-orange-600 text-white
+}
+
+.lendingRate .view-table .style-view .pagination .ant-pagination-item-active a:hover {
+    /* border-color: $button-background-color-orange; */
+    /* background-color: $button-background-color-orange; */
+    border-radius: 6px;
+    /* color: $background-color-white; */
+    @apply border-orange-600 bg-orange-600 text-white
+}
+
+.lendingRate .view-table .style-view .pagination .ant-pagination-item-link-icon,
+.lendingRate .view-table .style-view .pagination .ant-pagination-item-ellipsis,
+.lendingRate .view-table .style-view .pagination .ant-pagination-prev a,
+.lendingRate .view-table .style-view .pagination .ant-pagination-next a {
+    /* color: $button-background-color-orange; */
+    @apply text-orange-600 font-semibold text-base
+}
+
+.lendingRate .view-table .style-view .pagination .ant-pagination-disabled {
+    opacity: 50%;
+}
+
+.lendingRate .view-table .style-view .pagination .ant-pagination-prev,
+.lendingRate .view-table .style-view .pagination .ant-pagination-next {
+    margin-right: 18px;
+}
+
+@media (min-width: 992px) {
+    .lendingRate .caculation-tool {
+        border-right: 1px solid;
+        @apply border-gray-700
+    }
+}
+
+.lendingRate .note li {
+    list-style: circle !important;
+}
+
+.lendingRate .table-item{
+    @apply border-b-gray-400 border-b-[0.025rem]
+}
+
+.ant-slider .ant-slider-handle::before, .ant-slider .ant-slider-handle::after{
+    content: unset
+}

@@ -1,0 +1,7 @@
+.regulations p{
+    @apply mb-4;
+}
+
+.regulations h2 {
+    @apply pb-5 text-3xl text-orange-600 font-semibold text-left border-b-2 border-orange-500
+}

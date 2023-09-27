@@ -1,0 +1,29 @@
+.custom-input:focus-visible {
+    @apply w-full p-4 border border-orange-600 rounded-md;
+    outline: none;
+  }
+  .custom-input {
+    @apply bg-primary-100;
+  }
+  .custom-picker {
+    @apply bg-primary-100;
+  }
+
+
+.ant-picker-focused{
+    @apply w-full p-4 border-0 border-orange-600 rounded-md !important;
+    outline: none !important;
+}
+
+.ant-picker-focused {
+  @apply border border-orange-550 shadow-none !important;
+}
+
+
+
+.form-control .ant-picker-input .ant-picker-suffix .anticon-calendar svg path {
+  @apply text-orange-450;
+}
+.form-control .ant-picker-input .ant-picker-clear .anticon-close-circle svg path {
+  @apply text-orange-450;
+}

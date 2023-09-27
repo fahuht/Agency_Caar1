@@ -1,0 +1,24 @@
+.img-avatar{
+    @apply rounded-full;
+}
+.ant-modal-root .modal-logout-user .ant-modal .ant-modal-content .ant-modal-footer .ant-btn-default{
+    @apply font-semibold text-orange-450 bg-primary-100;
+    border: none;
+}
+.ant-modal-root .modal-logout-user .ant-modal .ant-modal-content .ant-modal-footer .ant-btn-primary{
+    @apply font-semibold bg-orange-450 text-primary-100;
+    border: none;
+}
+.ant-modal-root .modal-delete-user .ant-modal .ant-modal-content .ant-modal-footer .ant-btn-default{
+    @apply font-semibold text-orange-450 bg-primary-100;
+    border: none;
+}
+.ant-modal-root .modal-delete-user .ant-modal .ant-modal-content .ant-modal-footer .ant-btn-primary{
+    @apply font-semibold bg-orange-450 text-primary-100;
+    border: none;
+}
+.form-control .ant-input-suffix .ant-input-password-icon svg path {
+    @apply text-orange-450
+  }
+
+  

@@ -1,0 +1,42 @@
+.news-detail-container {
+    @apply px-3 lg:px-20 md:px-10 pt-10 bg-white
+  }
+
+  .image-top {
+    @apply w-full h-[35rem]
+  }
+
+  /* responsive */
+  
+  /* mobile */
+  @media (max-width: 768px) {
+    .image-top {
+      @apply h-[20rem]
+    }
+  }
+  
+  /* mobile */
+  @media (max-width: 480px) {
+    .image-top {
+      @apply h-[10rem]
+    }
+  }
+.detail-product-container {
+    @apply md:px-2 lg:px-5 xl:px-10 2xl:px-32 pt-5 bg-white
+}
+
+.content-product .content-product-left {
+    @apply w-4/5 p-2;
+}
+
+.content-product .content-product-right {
+    @apply w-1/5 p-2 flex flex-col gap-3;
+}
+
+.content-product .content-product-right .info-product {
+    @apply rounded-xl bg-pink-100 p-3;
+}
+
+.content-product .content-product-right .info-owner {
+    @apply rounded-xl bg-pink-100 p-3;
+}

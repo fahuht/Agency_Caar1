@@ -1,0 +1,7 @@
+.header-landing-page {
+  @apply relative pt-[50px] pb-[50px] lg:pt-[50px] h-5/6 flex items-center h-[576px] lg:h-[720px];
+  background-image:url('../../../../public/landing-pages-image/LogoHeader.png');
+}
+.header-landing-page .title-header {
+  @apply text-white mb-3 text-4xl font-bold leading-snug sm:text-[42px] lg:text-[40px] xl:text-[42px]
+}

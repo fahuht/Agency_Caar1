@@ -1,0 +1,60 @@
+/* NGUỒN HÀNG */
+.source-container {
+  @apply container mx-auto block lg:grid grid-cols-2 items-center;
+}
+
+/* TITLE Dùng chung */
+.title-landing-page {
+  @apply text-3xl lg:text-5xl font-bold
+}
+.description-landing-page {
+  @apply text-gray-600 text-base lg:text-lg
+}
+
+
+/* BROKER */
+.broker-container {
+  @apply container mx-auto flex flex-col-reverse  lg:items-start lg:grid grid-cols-2 lg:items-center;
+}
+
+.image-broker {
+  @apply relative w-full overflow-x-scroll mb-2 md:mb-0 lg:mb-0 overflow-y-hidden md:overflow-x-hidden lg:overflow-x-hidden
+}
+
+ .group-box-borker {
+  @apply static flex lg:absolute md:absolute md:grid lg:grid;
+  top: 25%;
+  right: 5%;
+}
+
+.box-broker {
+  @apply bg-white flex flex-col md:flex-row lg:flex-row items-center justify-between py-4 px-8 md:p-4 lg:p-4 rounded-lg mr-5 lg:mr-0 md:justify-start lg:justify-start w-full;
+}
+
+.box-broker:last-child{
+  @apply mr-0
+}
+
+.box-broker .image-broker-box {
+  background-color: var(--layer-layer-emphasize, #ffe8e5);
+  border-radius: 22px;
+  @apply w-14 h-14 flex items-center justify-center ;
+}
+
+
+
+/* DISABLE SCROLL */
+
+::-webkit-scrollbar{
+  width: 0px;
+}
+
+::-webkit-scrollbar-track{
+  display: none;
+}
+::-webkit-scrollbar-thumb{
+  display: none;
+}
+::-webkit-scrollbar-thumb:hover{
+  display: none;
+}

@@ -1,0 +1,72 @@
+.make-car-board-page{
+    @apply px-4 lg:px-0
+}
+
+.make-car-board-page .make-car-container {
+    @apply container mx-auto
+}
+
+.make-car-board-page .make-car-container .list-make {
+    @apply flex gap-4 overflow-x-auto overflow-y-hidden mt-7 pb-2
+}
+
+.make-car-board-page .make-car-container .list-make::-webkit-scrollbar{
+    @apply h-1
+}
+
+.make-car-board-page .make-car-container .list-make::-webkit-scrollbar-thumb {
+  @apply block bg-pink-300 rounded-lg
+}
+
+.make-car-board-page .make-car-container .list-make .make-item {
+    @apply flex flex-col p-6 rounded-md bg-pink-200 bg-opacity-30 items-center justify-center
+}
+
+.make-car-board-page .make-car-container .list-make .make-item img{
+    max-width: unset !important
+}
+
+.make-car-board-page .image-bg-bottom{
+    @apply grid grid-cols-3 container mx-auto
+}
+
+
+.make-car-board-page .image-bg-bottom .right-content{
+    @apply col-span-2 flex flex-col justify-center items-center pl-24
+}
+
+.make-car-board-page .image-bg-bottom .right-content .list-experience .experience-item{
+    @apply flex flex-col bg-white rounded-md p-4 w-44
+}
+
+.make-car-board-page .image-bg-bottom .right-content .list-experience .experience-item .experience-item-text{
+    @apply text-base font-semibold mt-10 whitespace-normal w-3/4
+}
+
+@media (max-width: 860px) {
+    .make-car-board-page .image-bg-bottom{
+        @apply grid grid-cols-1 container mx-auto flex-col-reverse
+    }
+
+    .make-car-board-page .image-bg-bottom .left-content{
+        @apply flex justify-center;
+        order: 2;
+    }
+
+    .make-car-board-page .image-bg-bottom .right-content{
+        @apply col-span-1 pl-0 relative;
+        order: 1;
+    }
+
+    .make-car-board-page .image-bg-bottom .right-content .text-production{
+        @apply items-center
+    }
+
+    .make-car-board-page .image-bg-bottom .right-content .text-production span{
+        @apply text-center
+    }
+
+    .make-car-board-page .image-bg-bottom .right-content .list-experience{
+        @apply absolute -bottom-[27rem] justify-center;
+    } 
+}

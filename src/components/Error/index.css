@@ -1,0 +1,11 @@
+.error-content .error-title {
+  @apply mb-2 text-5xl font-bold leading-none text-black sm:text-[5rem] md:text-[6rem];
+}
+
+.error-content .error-sub-title {
+  @apply mb-3 text-2xl font-semibold leading-tight text-black;
+}
+
+.error-content .error-link-btn {
+  @apply inline-block rounded-lg border border-white px-8 py-3 text-center text-base font-semibold text-black transition;
+}

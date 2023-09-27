@@ -1,0 +1,28 @@
+.regulations p{
+    @apply mb-4;
+}
+
+.regulations h2 {
+    @apply pb-5 text-3xl text-orange-600 font-semibold text-left border-b-2 border-orange-500
+}
+
+.se-component.se-image-container {
+    @apply mb-5
+}
+
+.se-component.se-image-container figure {
+    @apply flex items-center justify-center
+}
+
+.se-component.se-image-container img {
+    @apply w-1/2 object-cover object-center
+}
+
+@media (max-width: 768px) {
+    .regulations {
+       @apply py-12 px-[7%]
+    }
+    .se-component.se-image-container img {
+        @apply w-1/2 object-cover object-center w-full h-full
+    }
+}

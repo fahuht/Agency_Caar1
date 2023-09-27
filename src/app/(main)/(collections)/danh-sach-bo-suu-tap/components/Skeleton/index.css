@@ -1,0 +1,7 @@
+.collections-list-container {
+  @apply container rounded mx-auto
+}
+
+.collections-list-container .collections-list-content{
+  @apply grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-4
+}

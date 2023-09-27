@@ -1,0 +1,26 @@
+.register-home-page-container {
+  @apply pt-5 pb-5 lg:pt-[50px] lg:pb-5 flex justify-center items-center;
+  background-image: url('../../../../public/landing-pages-image/BackgroundRegister.png');
+  height: 800px;
+}
+
+.register-home-page-content{
+  @apply mx-8 flex flex-col md:grid grid-cols-2 gap-4
+}
+
+.register-home-page-container .register-home-page-content .text-title-register{
+  @apply text-white text-3xl md:text-5xl	text-start w-full md:w-full lg:w-full xl:w-8/12
+}
+
+.form-register-container{
+  @apply bg-white p-8 rounded-xl w-full md:w-full lg:w-full xl:w-8/12	 md:float-right
+}
+
+.input-register-home-page{
+  @apply h-14 w-full p-3 bg-primary-100 rounded-xl
+}
+
+.btn-register-home-page {
+  @apply w-full bg-primary-999 p-6 flex justify-center items-center
+}
+

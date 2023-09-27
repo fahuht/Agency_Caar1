@@ -1,0 +1,116 @@
+
+.search-item .ant-input {
+    @apply bg-primary-100
+}
+
+.search-item-button{
+    @apply h-10 sm:h-12 bg-primary-100 px-2 rounded-md cursor-pointer
+}
+
+.search-item-button span {
+    @apply text-xs text-gray-600
+}
+
+.search-item-button-title{
+    @apply flex justify-between items-center w-full h-full max-w-full
+}
+
+.search-item-button-title .anticon-down{
+    @apply text-xs
+}
+
+.search-item-button-title .ant-cascader{
+    @apply max-w-full h-full
+}
+
+.search-item-button-title .ant-cascader .ant-select-selector{
+    @apply max-w-full h-full bg-primary-100
+}
+
+.search-item-button-title .ant-cascader .ant-select-selector .ant-select-selection-search, .ant-select-selection-item, .ant-select-selection-placeholder{
+    @apply flex items-center max-w-[85%]
+}
+
+
+
+.search-item .search-item-action{
+    @apply bg-primary-100 h-10 sm:h-12 flex items-center justify-center rounded-md cursor-pointer text-primary-200
+}
+
+.search-item .search-item-action{
+    @apply hover:!bg-primary-200 hover:!text-white
+}
+
+
+.branches{
+    @apply grid grid-cols-3 max-h-80 overflow-y-scroll
+}
+
+.branch-active{
+    @apply bg-primary-100
+}
+
+.branch{
+    @apply flex flex-col items-center justify-center px-4 py-4 hover:bg-primary-100 cursor-pointer rounded-lg
+}
+
+.ds-dong-xe{
+    @apply max-h-96 overflow-y-scroll;
+}
+
+.dong-xe{
+    @apply flex justify-between py-2 px-2 w-60 hover:bg-primary-100 cursor-pointer rounded-md
+}
+
+.dong-xe .ten-dong-xe{
+    @apply text-sm text-gray-700
+}
+
+.ant-cascader-menu-item-content{
+    @apply text-sm text-gray-700
+}
+
+.common-select-box{
+    @apply max-w-full mt-4
+}
+
+/* .common-select-box .common-select-content{
+    @apply flex flex-wrap gap-2
+}
+
+.common-select-content .common-select-item{
+    @apply border-primary-200 text-primary-200 bg-primary-100 border-[1px] rounded-md px-4 py-2 text-center
+}
+
+.common-select-content .common-select-item{
+    @apply hover:!text-white hover:bg-primary-200 hover:cursor-pointer
+}
+
+.common-select-content .common-select-item-active{
+    @apply !text-white !bg-primary-200
+} */
+
+.advanced-item{
+    @apply mt-5
+}
+
+.advanced-item .advanced-item-title{
+    @apply font-medium text-sm
+}
+
+.advanced-item .advanced-item-content {
+    @apply mt-2
+}
+
+
+.range-picker-drawer .ant-picker-input input{
+    @apply text-sm
+}
+
+.drawer-advanced-search .ant-drawer-body{
+    @apply p-3
+}
+
+.color-item-active .ant-color-picker-trigger{
+    @apply border-[1px] border-primary-200
+}

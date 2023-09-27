@@ -1,0 +1,330 @@
+.detail-product-container{
+  @apply md:px-2 lg:px-5 xl:px-10 2xl:px-48 pt-5 bg-white !important
+}
+
+.product-title {
+  @apply border-b pb-2;
+}
+
+.btn-fullscreen {
+  @apply absolute z-[2] right-[2rem] bottom-[1rem]
+}
+
+.title-router {
+  @apply flex gap-2 items-center;
+}
+
+.title-router a {
+  @apply text-gray-700 no-underline;
+}
+
+.title-router a:hover {
+  @apply border-b-0;
+}
+
+.detail-product-container .product-title .product-title-left {
+   display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  @apply font-semibold text-4xl w-4/5 break-words cursor-default;
+
+}
+
+.content-product .content-product-left {
+  @apply w-4/5 p-2;
+}
+
+.content-product .content-product-right {
+  @apply w-1/5 p-2 flex flex-col gap-3;
+}
+
+.content-product .content-product-right .info-product {
+  @apply rounded-xl bg-pink-100 p-5 h-[22rem] lg:h-[26.5rem] flex flex-col gap-2 lg:gap-9 lg:justify-between;
+}
+
+.content-product .content-product-right .info-owner {
+  @apply rounded-xl bg-pink-100 p-3 flex flex-col gap-1 h-[11rem];
+}
+
+.info-owner-top {
+  @apply flex gap-2 p-2 border-b border-gray-400;
+}
+
+.info-owner-top .avt {
+  @apply rounded-[50%] bg-gray-700 w-14 h-14;
+}
+
+.info-owner-top .full-name {
+  @apply flex flex-col w-4/5;
+}
+
+.info-owner-bottom {
+  @apply flex flex-row  lg:gap-5  xl:gap-3 p-3;
+}
+
+.info-owner-bottom-item {
+  @apply flex flex-col w-1/2;
+}
+
+.information {
+  @apply grid grid-cols-6 gap-3 justify-around mt-4
+}
+
+.text-share{
+  @apply 2xl:text-lg xl:text-base md:text-sm sm:text-sm hover:text-orange-600 font-medium
+}
+
+.items-btn-share{
+  @apply 2xl:p-2 xl:p-2 md:p-1 sm:p-1
+}
+
+.items-btn-share a{
+  @apply text-black no-underline
+}
+
+.items-btn-share a:hover{
+  @apply border-b-0
+}
+
+/* css carousel */
+.image-carousel-item {
+  @apply w-full h-[40rem] rounded-2xl;
+}
+
+.img-thumbnail {
+  @apply w-28 h-20 rounded-xl mr-1 cursor-pointer;
+}
+
+.image-carousel-item img {
+  @apply rounded-2xl;
+}
+
+.active-thumbnail {
+  @apply border-2 border-blue-500;
+}
+
+/* .option-container{
+  @apply  
+} */
+
+.option-container .icon-option {
+  @apply rounded-full bg-pink-100 w-[3rem] h-[3rem];
+}
+
+.input-custom {
+  @apply w-full p-3 border border-orange-600 rounded-md;
+}
+
+.input-custom:focus-visible {
+  @apply w-full p-3 border border-orange-600 rounded-md;
+  outline: none;
+}
+
+/* css not-found page */
+.error-content .error-title {
+  @apply mb-2 text-5xl font-bold leading-none text-black sm:text-[5rem] md:text-[6rem];
+}
+
+.error-content .error-sub-title {
+  @apply mb-3 text-2xl font-semibold leading-tight text-black;
+}
+
+.error-content .error-link-btn {
+  @apply inline-block rounded-lg border border-white px-8 py-3 text-center text-base font-semibold text-black transition;
+}
+
+/* css sưiper */
+.swiper {
+  /* width: 100%;
+  height: 80%;
+  border-radius: 2rem; */
+  @apply w-full h-[80%] rounded-2xl
+}
+
+.swiper-slide {
+  @apply flex justify-center items-center rounded-[1.5rem] bg-white text-center
+}
+
+.swiper-slide img {
+  @apply rounded-[1.5rem] block w-full h-full object-cover
+}
+
+.swiper-carousel-container {
+  @apply w-full h-[38rem]
+}
+
+.swiper-thumbnail-container {
+  @apply py-[0.65rem] box-border h-[5rem]
+}
+
+.swiper-thumbnail-container .swiper-slide {
+  @apply opacity-[0.4] h-full w-[7rem] !important
+}
+
+.swiper-thumbnail-container .swiper-slide-thumb-active {
+  @apply opacity-[1] !important
+}
+
+/* .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+.swiper-button-prev,
+.swiper-button-next {
+  @apply text-white
+
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  @apply text-white
+}
+
+/* responsive */
+
+/* tablet */
+@media (max-width: 1024px) {
+  .title-router {
+    @apply text-sm;
+  }
+
+  .detail-product-container .product-title .product-title-left {
+    @apply font-medium text-2xl;
+  }
+
+  .detail-product-container .content-product .content-product-left {
+    @apply w-full;
+  }
+  .detail-product-container .content-product .content-product-right {
+    @apply w-full;
+  }
+
+  .content-product .content-product-right .info-owner {
+  @apply  h-[10rem];
+}
+
+  .content-product {
+    @apply flex-col;
+  }
+
+  .content-product .content-product-left {
+    @apply w-full;
+  }
+
+  .content-product .content-product-right {
+    @apply w-full p-2;
+  }
+
+  .swiper-carousel-container {
+    /* height: 35rem; */
+    @apply h-[28rem]
+  }
+
+  .swiper-thumbnail-container {
+    @apply h-[6rem]
+  }
+
+  .product-description p {
+    @apply w-full;
+  }
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .title-router {
+    @apply hidden;
+  }
+
+  .detail-product-container .product-title .product-title-left {
+    @apply text-lg;
+  }
+
+  .detail-product-container .content-product .content-product-left {
+    @apply w-full;
+  }
+  .detail-product-container .content-product .content-product-right {
+    @apply w-full;
+  }
+
+  .swiper-carousel-container {
+    @apply h-[25rem]
+  }
+
+  .swiper-thumbnail-container {
+    @apply h-[4rem]
+  }
+
+  .swiper-thumbnail-container .swiper-slide {
+    @apply w-[5rem] rounded-lg !important 
+  }
+
+  .swiper-thumbnail-container .swiper-slide img {
+    @apply  rounded-lg  
+  }
+
+  .information {
+    @apply grid-cols-3;
+  }
+}
+
+/* mobile */
+@media (max-width: 480px) {
+  .detail-product-container .product-title {
+    @apply flex-col gap-2;
+  }
+
+  .detail-product-container .product-title .product-title-left {
+    @apply w-full;
+  }
+  .detail-product-container .content-product .content-product-left {
+    @apply w-full;
+  }
+  .detail-product-container .content-product .content-product-right {
+    @apply w-full;
+  }
+
+  .swiper-carousel-container {
+    @apply h-[15rem]
+  }
+
+  .swiper-thumbnail-container {
+    @apply h-[3rem]
+  }
+
+  .swiper-thumbnail-container .swiper-slide {
+    @apply w-[5rem] !important
+  }
+
+  .information {
+    @apply grid-cols-2;
+  }
+}
+
+.product-location .desc-location{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.list-items-discovery{
+  @apply flex flex-wrap gap-3 mt-2 mb-5 p-2
+}
+
+.items-discover{
+  @apply p-1 lg:p-3 bg-primary-100 rounded-[1rem] flex justify-center cursor-pointer
+}
+
+.more-product{
+  @apply bg-primary-100
+}
+
+.more-product-container{
+   @apply md:px-2 lg:px-5 xl:px-10 2xl:px-48 pt-7
+}

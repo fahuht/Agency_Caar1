@@ -1,0 +1,32 @@
+.body-style-landing-page {
+    @apply px-4 lg:px-0
+}
+
+.body-style-landing-page .body-style-container .list-body-style {
+    @apply flex gap-4 overflow-x-auto overflow-y-hidden mt-9
+}
+
+.body-style-landing-page .body-style-container {
+    @apply  container mx-auto pb-6
+}
+
+.body-style-landing-page .body-style-container .list-body-style {
+    @apply pb-4
+}
+
+.body-style-landing-page .body-style-container .list-body-style::-webkit-scrollbar {
+    @apply h-1
+}
+
+.body-style-landing-page .body-style-container .list-body-style::-webkit-scrollbar-thumb {
+    @apply block bg-pink-300 rounded-lg
+}
+
+.body-style-landing-page .body-style-container .list-body-style .item-body-style img {
+    @apply rounded-xl w-64 md:w-96;
+    max-width: unset !important;
+}
+
+.body-style-landing-page .body-style-container .list-body-style .label-body-style {
+    @apply text-white font-medium absolute top-2 lg:top-3 left-2 lg:left-3 text-sm md:text-sm lg:text-base
+}

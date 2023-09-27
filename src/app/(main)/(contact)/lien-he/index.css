@@ -1,0 +1,30 @@
+.body-content {
+    @apply min-h-0 p-0
+}
+@media (max-width: 600px) {
+    .contact-web {
+        @apply m-0 p-7
+    }
+
+    .style-title {
+        @apply mt-8
+    }
+
+    .map {
+        @apply mt-8
+    }
+
+    .contact-web iframe {
+        @apply w-full h-56
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1023px) {
+    .contact-web {
+        @apply m-0 p-10
+    }
+
+    .map {
+        @apply mt-8 justify-center
+    }
+}

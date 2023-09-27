@@ -1,0 +1,27 @@
+.title-news-spotlight {
+  background: linear-gradient(180deg, rgba(19, 13, 13, 0), rgb(19, 13, 13));
+}
+.item-new-flex {
+  flex: 0 0 auto;
+}
+.custom-search {
+  @apply w-full p-3 border rounded-md focus-visible:border-orange-550  outline-none bg-primary-100
+}
+.custom-icon-search {
+  @apply absolute top-[20%] right-4 translate-y-1/2 text-orange-600 flex cursor-pointer
+}
+.title-home {
+  @apply hover:border-b-0 transition duration-150 ease-in-out
+}
+.image-spotlight {
+  @apply w-full object-cover object-center  aspect-4/3
+}
+.custom-news-spotlight {
+  @apply absolute left-0 bottom-0 right-0 p-3 xl:p-8 text-slate-50
+}
+.url-title-spotlight {
+  @apply mt-3 font-bold text-sm md:text-base line-clamp-2  text-slate-50 hover:border-b-0
+}
+.url-news-spotlight {
+  @apply mt-2 md:mt-5 lg:mt-1 xl:mt-3 font-bold text-sm lg:text-base text-slate-700 line-clamp-2 hover:border-b-0
+}

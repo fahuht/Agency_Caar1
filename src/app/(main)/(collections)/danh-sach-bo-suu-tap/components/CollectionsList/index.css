@@ -1,0 +1,42 @@
+.collections-list-container {
+  @apply container rounded mx-auto
+}
+
+.collections-list-container .collections-list-content{
+  @apply grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-4
+}
+
+.create-collections-container {
+  @apply bg-white h-36 md:h-full lg:h-full xl:h-full 2xl:h-full  rounded-md flex items-center justify-center
+
+}
+
+.icon-create-collections {
+  background-color: #FF452D;
+  color:white;
+  padding:10px;
+  border-radius: 20px;
+}
+
+.text-create-collections {
+  color: #FF452D;
+}
+
+.container-four-image {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2px; /* Khoảng cách giữa các phần */
+}
+
+.item-four-image {
+  @apply rounded-lg
+}
+.two-image-blank {
+  aspect-ratio: 2;
+}
+
+
+.image-two-blank {
+  height: '50%';
+}

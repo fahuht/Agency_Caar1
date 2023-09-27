@@ -1,0 +1,35 @@
+.news-car-board-page{
+    @apply px-4 lg:px-0
+}
+
+.news-car-board-page .news-car-container {
+    @apply container mx-auto
+}
+
+.news-car-board-page .news-car-container .tabs-news {
+    @apply flex gap-3 mt-3
+}
+
+.news-car-board-page .news-car-container .tabs-news .view-all{
+    @apply ml-auto text-orange-600 whitespace-nowrap text-xs md:text-xs lg:text-base
+}
+
+.news-car-board-page .news-car-container .list-news-board-container {
+    @apply flex items-stretch overflow-x-auto flex-nowrap mt-4 pb-2
+}
+
+.news-car-board-page .news-car-container .list-news-board-container::-webkit-scrollbar {
+    @apply h-1
+}
+
+.news-car-board-page .news-car-container .list-news-board-container::-webkit-scrollbar-thumb {
+    @apply block bg-pink-200 rounded-lg
+}
+
+.news-car-board-page .news-car-container .tabs-news .item-tabs {
+    @apply text-xs md:text-xs lg:text-base font-semibold whitespace-nowrap
+}
+
+.news-car-board-page .news-car-container .list-news-board-container .item-new-flex {
+    flex: 0 0 auto;
+}

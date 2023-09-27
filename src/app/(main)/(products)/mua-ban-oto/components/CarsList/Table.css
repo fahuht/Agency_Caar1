@@ -1,0 +1,107 @@
+.car-list-table .type-view-table td{
+    @apply border-gray-400
+}
+
+@media (max-width: 576px) {
+    .car-list-table .type-view-table {
+        padding-top: unset !important;
+    }
+}
+
+.car-list-table .type-view-table .table {
+    /* width: 100%; */
+    /* table-layout: fixed; */
+    transition: all 0.1s;
+    @apply text-black w-full table-fixed
+}
+
+.car-list-table .type-view-table .table thead {
+    /* position: sticky;
+    top: 0;
+    z-index: 1; */
+    @apply sticky top-0 z-[1]
+}
+
+.car-list-table .type-view-table .table tbody tr .table-content {
+    /* text-align: center; */
+    @apply text-center
+}
+
+.car-list-table .type-view-table .table tbody tr .row-left {
+    /* text-align: left; */
+    @apply text-left
+}
+
+
+.car-list-table .type-view-table .table tbody tr td .table-label {
+    /* display: none; */
+    @apply hidden
+}
+
+.car-list-table .type-view-table .table tbody.scrollable-tbody {
+    /* overflow-y: auto;
+    max-height: 400px; */
+    @apply overflow-y-auto max-h-[400px]
+}
+
+@media (max-width: 999.98px) {
+    .car-list-table .type-view-table .table {
+        /* display: block; */
+        @apply block
+    }
+
+    .car-list-table .type-view-table .table thead {
+        /* display: none; */
+        @apply hidden
+    }
+
+    .car-list-table .type-view-table .table tbody {
+        /* display: block; */
+        @apply block
+    }
+
+    .car-list-table .type-view-table .table tbody tr {
+        /* display: block;
+        border-bottom: 1px solid; */
+        @apply border-gray-500 block border-b
+    }
+
+    .car-list-table .type-view-table .table tbody tr .table-content {
+        /* text-align: center; */
+        @apply text-center
+    }
+
+    .car-list-table .type-view-table .table tbody tr td {
+        /* display: flex;
+        flex-wrap: wrap;
+        border-bottom: 0;
+        border-top: 0; */
+        padding-left: unset;
+        padding-right: unset;
+        @apply flex flex-wrap border-b-0 border-t-0
+    }
+
+    .car-list-table .type-view-table .table tbody tr td .table-label {
+        /* width: 40%;
+        text-align: left;
+        display: block; */
+        @apply w-[40%] text-left block
+    }
+
+    .car-list-table .type-view-table .table tbody tr td .table-content {
+        /* width: 60%;
+        text-align: right; */
+        @apply text-right w-[60%]
+    }
+
+    .car-list-table .type-view-table .table tbody tr td .item-collection {
+        /* display: flex;
+        justify-content: end; */
+        @apply flex justify-end
+    }
+
+
+    /* .car-list-table .type-view-table .table tbody tr td .table-content .img {
+        justify-content: start;
+    } */
+}
